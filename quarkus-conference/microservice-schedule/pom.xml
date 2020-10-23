@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.acme</groupId>
-  <artifactId>microservice-schedule</artifactId>
+  <artifactId>microservice-session</artifactId>
   <version>1.0</version>
   <properties>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
@@ -14,7 +14,10 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus-plugin.version>${quarkus.platform.version}</quarkus-plugin.version>
     <quarkus.platform.artifact-id>quarkus-universe-bom</quarkus.platform.artifact-id>
-    <q
+    <quarkus.platform.group-id>com.redhat.quarkus</quarkus.platform.group-id>
+    <quarkus.platform.version>1.7.5.Final-redhat-00007</quarkus.platform.version>
+    <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
