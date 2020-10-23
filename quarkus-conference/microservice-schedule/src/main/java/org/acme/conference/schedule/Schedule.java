@@ -12,6 +12,8 @@ import javax.persistence.Id;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
 /**
  * Representation of the entity Schedule
  * 
@@ -19,6 +21,7 @@ import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
  *
  */
 @Entity
+@RegisterForReflection
 public class Schedule extends PanacheEntityBase {
 
     @Id
