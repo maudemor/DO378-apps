@@ -43,17 +43,21 @@
       <artifactId>quarkus-hibernate-orm-panache</artifactId>
     </dependency>
     <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-jdbc-postgresql</artifactId>
+    </dependency>
+<!--    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-jdbc-h2</artifactId>
-    </dependency>
+    </dependency>-->
 <!--     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-opentracing</artifactId>
     </dependency> -->
-    <dependency>
+<!--    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>
-    </dependency>
+    </dependency> -->
 <!--     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-fault-tolerance</artifactId>
@@ -70,7 +74,7 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-metrics</artifactId>
     </dependency>
- -->    <dependency>
+ --><!--   <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
@@ -79,7 +83,7 @@
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
-    </dependency>
+    </dependency> -->
   </dependencies>
   <build>
     <resources>
@@ -132,8 +136,8 @@
             <executions>
               <execution>
                 <goals>
-                  <goal>integration-test</goal>
-                  <goal>verify</goal>
+                  <!--<goal>integration-test</goal>
+                  <goal>verify</goal>-->
                 </goals>
                 <configuration>
                   <systemProperties>
